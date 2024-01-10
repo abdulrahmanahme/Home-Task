@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../config/app_colors.dart';
 
 class UserAvatar extends StatelessWidget {
@@ -15,7 +16,7 @@ final String image;
           radius: 25.0, 
           backgroundColor: AppColors.blue.withOpacity(.5), 
           child: CircleAvatar(
-            radius: 20.0,
+            radius: 19.0,
             backgroundColor: AppColors.white,
             backgroundImage:NetworkImage(image)
            

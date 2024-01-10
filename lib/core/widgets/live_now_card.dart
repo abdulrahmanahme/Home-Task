@@ -3,29 +3,33 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:home/core/widgets/default_botton.dart';
 
 import '../../config/app_colors.dart';
-import '../../config/app_const.dart';
 import '../../config/app_text_styles.dart';
 
 class LiveNowCard extends StatelessWidget {
   const LiveNowCard({
     super.key,
     required this.nameStore,
-    required this.time,
     required this.userName,
+    required this.itemImage,
+    required this.userImage,
+
+
   });
-  final String time;
   final String userName;
   final String nameStore;
+  final String userImage;
+  final String itemImage;
+
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 170.h,
-      width: 270.w,
+      width: 280.w,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         image: DecorationImage(
-          image: NetworkImage(AppConst.imageUrl),
+          image: NetworkImage(itemImage),
           fit: BoxFit.cover,
         ),
       ),
@@ -52,13 +56,6 @@ class LiveNowCard extends StatelessWidget {
                       width: 260.w,
                       child: Row(
                         children: [
-                          Padding(
-                            padding: EdgeInsets.only(left: 15.w),
-                            child: Text(
-                              time,
-                              style: AppTextStyle.font10GreyColor400,
-                            ),
-                          ),
                           const Spacer(),
                           Text(
                             userName,
@@ -74,7 +71,7 @@ class LiveNowCard extends StatelessWidget {
                                 radius: 20.0,
                                 backgroundColor: AppColors.white,
                                 backgroundImage:
-                                    NetworkImage(AppConst.imageUrl)),
+                                    NetworkImage(userImage)),
                           ),
                         ],
                       ),

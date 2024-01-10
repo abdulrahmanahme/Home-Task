@@ -17,7 +17,7 @@ class CategoryTitle extends StatelessWidget {
       children: [
         Text(
          title,
-          style: AppTextStyle.font16primaryColor600,
+          style: AppTextStyle. font16primaryColor400,
         ),
         SizedBox(
       height: 8.h,

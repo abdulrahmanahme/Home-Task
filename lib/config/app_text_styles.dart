@@ -43,6 +43,10 @@ class AppTextStyle {
       .merge(fontWeight700)
       .merge(fontSize20)
       .copyWith(color: AppColors.white);
+      static TextStyle get font14White400 => fontFamily
+      .merge(fontWeight400)
+      .merge(fontSize14)
+      .copyWith(color: AppColors.white);
 
       static TextStyle get font16PrimaryTextColor500 => fontFamily
       .merge(fontWeight500)
@@ -60,6 +64,10 @@ class AppTextStyle {
 
       static TextStyle get font16primaryColor600 => fontFamily
       .merge(fontWeight600)
+      .merge(fontSize16)
+      .copyWith(color: AppColors.primaryColor);
+      static TextStyle get font16primaryColor400 => fontFamily
+      .merge(fontWeight400)
       .merge(fontSize16)
       .copyWith(color: AppColors.primaryColor);
       

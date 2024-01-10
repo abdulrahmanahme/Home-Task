@@ -2,15 +2,17 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:home/core/widgets/user_avatar_widget.dart';
 
-import '../../config/app_const.dart';
 import '../../config/app_text_styles.dart';
 
 class AvatarDataWidget extends StatelessWidget {
   const AvatarDataWidget({
     super.key,
     required this.title,
+    required this.image,
   });
   final String title;
+  final String image;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -19,9 +21,10 @@ class AvatarDataWidget extends StatelessWidget {
         children: [
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Text(
-                'صباح الخير',
+                ',صباح الخير',
                 style: AppTextStyle.font16PrimaryTextColor500,
               ),
               Text(
@@ -34,7 +37,7 @@ class AvatarDataWidget extends StatelessWidget {
             width: 10.w,
           ),
           UserAvatar(
-            image: AppConst.imageUrl,
+            image: image,
           ),
         ],
       ),

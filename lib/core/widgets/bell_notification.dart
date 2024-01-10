@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../config/app_colors.dart';
 import '../../config/app_text_styles.dart';
@@ -15,7 +14,7 @@ class BellNotification extends StatelessWidget {
     return Stack(
       children: [
         const Icon(
-          Icons.notifications_none_outlined,
+          Icons.notifications_none_rounded,
           size: 37,
           color: AppColors.primaryColor,
         ),
