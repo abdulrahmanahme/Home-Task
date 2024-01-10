@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         builder: (_, child) {
           return MaterialApp(
             title: 'Home Task',
+            debugShowCheckedModeBanner: false,
             theme: ThemeData(
               useMaterial3: true,
             ),
